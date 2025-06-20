@@ -6,7 +6,7 @@ let simpleMath = 50+6-7/8*9;
 console.log(simpleMath);
 
 
-// Quy tắc đặt tên Variables
+// ***** Quy tắc đặt tên Variables
     /*
     1. camelcase
     2. mổ tả rõ ràng
@@ -27,3 +27,16 @@ let ourPopulation = 90;
 console.log(myCountry);
 console.log(myContient);
 console.log(ourPopulation);
+
+// ***** Value
+let javascriptIsFun = true;
+console.log("Show the type of a value: " + typeof javascriptIsFun);
+console.log(typeof 23);
+console.log(typeof 'Jonas');
+// change a value không cần dùng 'let'
+javascriptIsFun = 'Yes! (❁´◡`❁)';
+console.log(javascriptIsFun);
+// vis dụ về biến có giá trị 'undefined'
+let cuto;
+console.log(cuto);
+console.log(typeof cuto);
