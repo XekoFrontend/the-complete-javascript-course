@@ -6,14 +6,16 @@ let simpleMath = 50+6-7/8*9;
 console.log(simpleMath);
 
 
-// ***** Quy tắc đặt tên Variables
-    /*
+/**
+ * ------------------------------------------------------------------------
+ * Quy tắc đặt tên Variables
+ * ------------------------------------------------------------------------
     1. camelcase
     2. mổ tả rõ ràng
     3. không dùng số ở đầu, có thể dùng _ hoặc $
     4. chỉ chứa chữ cái, số hoặc 2 ký tự _ và $
     5. tránh dùng các từ khóa trùng với JavaScript, ví dụ: new, function ...
-    */
+*/
 let myFirstName = 'Haruka';
     // Trường hợp đặc biệt
 let PI = 3.1415;
@@ -40,3 +42,14 @@ console.log(javascriptIsFun);
 let cuto;
 console.log(cuto);
 console.log(typeof cuto);
+
+/**
+ * ------------------------------------------------------------------------
+ * 2 kiểu Khai báo variables thường dùng
+ * ------------------------------------------------------------------------
+ */
+// Có thể thay đổi values
+let customerJob = 'Student';
+// Cố định, không thay đổi
+const customerAge = 25;
+
