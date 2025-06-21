@@ -53,3 +53,31 @@ let customerJob = 'Student';
 // Cố định, không thay đổi
 const customerAge = 25;
 
+/**
+ * ------------------------------------------------------------------------
+ * Math Operator (phép toán)
+ * ------------------------------------------------------------------------
+ */
+const futureYear = 2030;
+const bithYearJonas = 1991;
+const bithYearHaruka = 2011;
+console.log("Jonas Age: ", futureYear - bithYearJonas, 'Haruka Age:', futureYear - bithYearHaruka);
+// ***** lũy thừa 2**3 = 2*2*2
+console.log(2 ** 3);
+// ***** phép tính dồn
+let ageHaruka = futureYear - bithYearHaruka; // = 19
+ageHaruka += 10; // 19 + 10 = 29
+ageHaruka -= 9; //20
+ageHaruka /= 10; //2
+// ***** tịnh tiến, thường dùng trong vòng lặp
+ageHaruka ++; // 2 + 1 = 3
+ageHaruka --; // 2
+ageHaruka --; // 1
+console.log(ageHaruka);
+
+/**
+ * ------------------------------------------------------------------------
+ * Compare Operator (phép so sánh)
+ * ------------------------------------------------------------------------
+ */
+
