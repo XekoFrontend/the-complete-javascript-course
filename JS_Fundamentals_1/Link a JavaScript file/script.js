@@ -79,5 +79,8 @@ console.log(ageHaruka);
  * ------------------------------------------------------------------------
  * Compare Operator (phép so sánh)
  * ------------------------------------------------------------------------
+ * Thông thường sẽ lưu kết quả vào 1 biến
  */
+const isCollectStudent= ageHaruka >= 18;
+console.log(isCollectStudent);
 
