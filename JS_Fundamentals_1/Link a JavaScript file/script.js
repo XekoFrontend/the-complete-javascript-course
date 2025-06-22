@@ -84,3 +84,17 @@ console.log(ageHaruka);
 const isCollectStudent= ageHaruka >= 18;
 console.log(isCollectStudent);
 
+/**
+ * ------------------------------------------------------------------------
+ * String and Template literals
+ * ------------------------------------------------------------------------
+ *  Sử dụng dấu ``
+ *  ${tên biến, hoặc toán tử}
+ *  dùng \n\ hoặc enter trực tiếp để xuống dòng.
+ */
+const lastName = 'Miku';
+const userInfo = `----- String and Template literals -----\n\
+Her name is ${myFirstName} and her last name is ${lastName}.
+- she comes from ${myContient}.
+- she is a ${customerJob}.`;
+console.log(userInfo);
