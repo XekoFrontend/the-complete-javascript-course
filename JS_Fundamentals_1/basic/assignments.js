@@ -33,3 +33,18 @@ console.log(
  * LECTURE: let, const and var
  * ------------------------------------------------------------------------
  */
+language = 'Vietnamese';
+
+/**
+ * ------------------------------------------------------------------------
+ * LECTURE: Basic Operators
+ * ------------------------------------------------------------------------
+ */
+
+let halfPopulation = population / 2;
+console.log(`My population in half country is ${halfPopulation} millions people.`);
+population += 1;
+console.log(population);
+console.log(`My country has more ${population - 6} million people than Finland.`);
+let description = `${myCountry} is in ${myContient}, and its ${population} million people speak ${language}.`;
+console.log(description)
