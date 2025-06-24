@@ -5,8 +5,8 @@ console.log('******* ASSIGNMENTS *******');
  * ------------------------------------------------------------------------
   */
 
-let country = "Cambodia";
-let continent = "Asia";
+const country = "Cambodia";
+const continent = "Asia";
 let population = 90;
 
 console.log(country);
