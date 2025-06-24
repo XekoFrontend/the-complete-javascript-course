@@ -49,3 +49,16 @@ console.log(population);
 console.log(`My country has more ${population - 6} million people than Finland.`);
 let description = `${myCountry} is in ${myContient}, and its ${population} million people speak ${language}.`;
 console.log(description)
+
+/**
+ * ------------------------------------------------------------------------
+ * LECTURE:  if / else Statements
+ * ------------------------------------------------------------------------
+ */
+const averagePopulation = 33
+const compareToAverage = population - averagePopulation;
+if (compareToAverage < 0) {
+    console.log(`${myCountry}'s is ${population} million below average.`);
+} else {
+    console.log(`${myCountry}'s population is above average.`);
+}
