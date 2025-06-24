@@ -104,7 +104,24 @@ console.log(userInfo);
  * ------------------------------------------------------------------------
  * Convert
  * ------------------------------------------------------------------------
+ * Chú ý: viết hoa chữ cái trong các hàm chuyển đổi
+ *      - Number
+ *      - String
+ * Không thể convert các value: null, undefined.
  */
 
+// Type conversion
+const year = '1991';
+const month = 12;
+console .log(Number(year) + month); //2003 <- number
+console.log(year + month); // 199112 <- string
+console.log(Number('Doremon')); // NaN <- Not a Number
+console.log(year + String(month)); // 199112 <- string
 
-
+// Type coercion (JavaScript tự động chuyển đổi cưỡng chế khi có 2 kiểu dữ liệu khác nhau, khi dùng operation)
+// +
+console.log('She is ' + 25 + ' years old.'); // string
+// The rest (auto convert to number)
+console.log('52' - 25 - '7');        // 20 <-number
+console.log('34'/ '2');              // 17
+console.log('57' * '2' / 6 - '4');   // 15

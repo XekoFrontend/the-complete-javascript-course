@@ -55,6 +55,7 @@ console.log(description)
  * LECTURE:  if / else Statements
  * ------------------------------------------------------------------------
  */
+
 const averagePopulation = 33
 const compareToAverage = population - averagePopulation;
 if (compareToAverage < 0) {
