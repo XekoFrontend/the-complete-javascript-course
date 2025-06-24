@@ -62,3 +62,21 @@ if (compareToAverage < 0) {
 } else {
     console.log(`${myCountry}'s population is above average.`);
 }
+
+/**
+ * ------------------------------------------------------------------------
+ * LECTURE:  Type Conversion and Coercion
+ * ------------------------------------------------------------------------
+ */
+
+const question1 = '9' - '5' // 4
+const question2 = '19' - '13' + '17' // 617
+const question3 = '19' - '13' + 17 // 23
+const question4 = '123' < '57' // false
+const  question5 = 5 + 6 +'4' + 9 - 4 -2 // 1143
+console.log(`${question1},
+${question2},
+${question3},
+${question4},
+${question5}`);
+// question4: dựa trên mã Unicode so sánh ký tự đầu tiên. Vì '1' < '5' nên '123' < '57' là true
