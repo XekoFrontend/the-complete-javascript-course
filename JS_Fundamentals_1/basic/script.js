@@ -125,3 +125,27 @@ console.log('She is ' + 25 + ' years old.'); // string
 console.log('52' - 25 - '7');        // 20 <-number
 console.log('34'/ '2');              // 17
 console.log('57' * '2' / 6 - '4');   // 15
+
+/**
+ * ------------------------------------------------------------------------
+ * Truthy and Falsy Values
+ * ------------------------------------------------------------------------
+ *  Trong boolean operator thì 5 giá trị dưới sẽ cho kết quả false.
+ *  Ngoài 5 cái đó thì còn lại tự động là True.
+ *  5 falsy values: 0, undefined, '', null, NaN
+ */
+
+// example 1: the zero number
+const height = 0;
+if (height) {
+    console.log("It's true because the height is a non-zero number.");
+} else {
+    console.log("It's false because the height is 0");
+}
+// example 2: Null
+let weight = '';
+if(weight){
+    console.log('True');
+}else {
+    console.log('False');
+}
