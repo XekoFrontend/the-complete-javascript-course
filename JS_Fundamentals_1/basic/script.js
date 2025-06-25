@@ -47,6 +47,9 @@ console.log(typeof cuto);
  * ------------------------------------------------------------------------
  * 2 kiểu Khai báo variables thường dùng
  * ------------------------------------------------------------------------
+ 1. `let` cho phép bạn khai báo một biến có thể thay đổi giá trị sau này.
+ 2. `const` (constant) được sử dụng để khai báo một hằng số - nghĩa là giá trị không thể thay đổi sau khi được khởi tạo.
+
  */
 // Có thể thay đổi values
 let customerJob = 'Student';
@@ -143,9 +146,9 @@ if (height) {
     console.log("It's false because the height is 0");
 }
 // example 2: Null
-let weight = '';
+const weight = '';
 if(weight){
     console.log('True');
 }else {
-    console.log('False');
+    console.log('It\'s false because the variable is Null.');
 }
