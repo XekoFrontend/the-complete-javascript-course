@@ -161,7 +161,7 @@ if(weight){
  * =	    Gán	    ❌ Không	    Khi gán giá trị
  * ==	    So sánh	❌ Không	    Khi không quan tâm kiểu dữ liệu
  * ===	    So sánh	✅ Có	        Khi cần so sánh chính xác cả kiểu và giá trị
- * Khi so sánh ưu tiên dùng === cho dễ debug.
+ * Pro Tip: Khi so sánh ưu tiên dùng === cho dễ debug. Giả vờ như == không tồn tại
  */
 console.log('----- == vs === -----');
 const newAge = '18';
