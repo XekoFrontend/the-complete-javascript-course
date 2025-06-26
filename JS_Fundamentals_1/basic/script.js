@@ -152,3 +152,17 @@ if(weight){
 }else {
     console.log('It\'s false because the variable is Null.');
 }
+
+/**
+ * ------------------------------------------------------------------------
+ * == vs ===
+ * ------------------------------------------------------------------------
+ * Toán tử	Ý nghĩa	kiểu dữ liệu?	Dùng khi nào?
+ * =	    Gán	    ❌ Không	    Khi gán giá trị
+ * ==	    So sánh	❌ Không	    Khi không quan tâm kiểu dữ liệu
+ * ===	    So sánh	✅ Có	        Khi cần so sánh chính xác cả kiểu và giá trị
+ * Khi so sánh ưu tiên dùng === cho dễ debug.
+ */
+const newAge = '18';
+if (newAge === 18) console.log('Strick: Khi cần so sánh chính xác cả kiểu và giá trị.');
+if (newAge == 18) console.log('Loose: không quan tâm kiểu dữ liệu.');
