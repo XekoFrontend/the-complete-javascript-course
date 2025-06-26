@@ -163,6 +163,23 @@ if(weight){
  * ===	    So sánh	✅ Có	        Khi cần so sánh chính xác cả kiểu và giá trị
  * Khi so sánh ưu tiên dùng === cho dễ debug.
  */
+console.log('----- == vs === -----');
 const newAge = '18';
 if (newAge === 18) console.log('Strick: Khi cần so sánh chính xác cả kiểu và giá trị.');
 if (newAge == 18) console.log('Loose: không quan tâm kiểu dữ liệu.');
+
+// example prompt, if block
+const inputNumber = Number(prompt('Enter a number'));
+if (inputNumber === 3) {
+    console.log(`Correct! The number is ${inputNumber}`);
+} else if (inputNumber === 5) {
+    console.log(`${inputNumber} is cool, but too high.`);
+} else if (inputNumber === 1) {
+    console.log(`${inputNumber} is too low.`);
+} else {
+    console.log(`${inputNumber} is not our number.`);
+}
+
+if (inputNumber != 3) {
+    console.log('try again.');
+}
