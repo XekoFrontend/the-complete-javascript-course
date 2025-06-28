@@ -134,7 +134,7 @@ console.log('57' * '2' / 6 - '4');   // 15
  * Truthy and Falsy Values
  * ------------------------------------------------------------------------
  *  Trong boolean operator thì 5 giá trị dưới sẽ cho kết quả false.
- *  Ngoài 5 cái đó thì còn lại tự động là True.
+ *  Ngoài 5 cái đó thì còn lại tự động là 'true'.
  *  5 falsy values: 0, undefined, '', null, NaN
  */
 
@@ -169,7 +169,9 @@ if (newAge === 18) console.log('Strick: Khi cần so sánh chính xác cả ki�
 if (newAge == 18) console.log('Loose: không quan tâm kiểu dữ liệu.');
 
 // example prompt, if block
+/*
 const inputNumber = Number(prompt('Enter a number'));
+
 if (inputNumber === 3) {
     console.log(`Correct! The number is ${inputNumber}`);
 } else if (inputNumber === 5) {
@@ -183,3 +185,25 @@ if (inputNumber === 3) {
 if (inputNumber != 3) {
     console.log('try again.');
 }
+ */
+
+/**
+ * ------------------------------------------------------------------------
+ * Logical Operators
+ * ------------------------------------------------------------------------
+ * - AND: &&
+ * - OR:  ||
+ * - NOT: !
+ */
+const hasDriversLicense = true; // Điều kiện A
+const hasGoodVision = true;     // Điều kiện B
+const isTired = false;           //Điều kiện C
+
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired;
+if (shouldDrive) {
+    console.log('You can drive.');
+} else {
+    console.log('You can\'t drive.');
+}
+
+
