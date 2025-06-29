@@ -10,6 +10,7 @@
  * § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
  * m tall.
  */
+
 // 1. Store Mark's and John's mass and height in variables
 let massMark = 78;
 let heightMark = 1.69;
@@ -33,6 +34,7 @@ bmiJohn = massJohn / heightJohn ** 2;
 markHigherBMI = bmiMark > bmiJohn;
 console.log('Data 2', bmiMark, bmiJohn, markHigherBMI);
 
+
 /**
  * ------------------------------------------------------------------------
  * CHALLENGE 2
@@ -45,9 +47,41 @@ console.log('Data 2', bmiMark, bmiJohn, markHigherBMI);
  * BMI (28.3) is higher than John's (23.9)!"
  * Hint: Use an if/else statement
  */
+
 console.log('----- Challenge 2 -----');
 if (bmiMark > bmiJohn) {
     console.log(`Mark's BMI ${bmiMark} is heigher than John's BMI ${bmiJohn}.`);
 } else {
     console.log(`Mark's BMI ${bmiMark} is lower than John's BMI ${bmiJohn}.`);
+}
+
+
+/**
+ * ------------------------------------------------------------------------
+ * CHALLENGE 3
+ * ------------------------------------------------------------------------
+ * There are two gymnastics teams, Dolphins and Koalas. They compete against each
+ * other 3 times. The winner with the highest average score wins a trophy!
+ * Your tasks:
+ * 1. Calculate the average score for each team, using the test data below
+ * 2. Compare the team's average scores to determine the winner of the competition,
+ * and print it to the console. Don\'t forget that there can be a draw, so test for that
+ * as well (draw means they have the same average score)
+ * Test data:
+ * § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+ * § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
+ * § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+ */
+
+console.log('----- Challenge 3 -----');
+// Calculate the average score
+const dolphinsScore = (96 + 108 + 89)/3;
+const koalasScore = (88 + 91 + 110)/3;
+// Compare
+if (dolphinsScore > koalasScore) {
+    console.log('Dolphins win the competition!');
+} else if (dolphinsScore < koalasScore) {
+    console.log('Koalas win the competition!');
+} else {
+    console.log('Draw!');
 }

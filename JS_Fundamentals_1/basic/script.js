@@ -143,9 +143,9 @@ if(age >= 18){
 }
 
 // Example 2
-const year = 2993;
+const year2 = 2993;
 let century;
-if (year > 2000){
+if (year2 > 2000){
     century = 21;
 } else {
     century = 20;
