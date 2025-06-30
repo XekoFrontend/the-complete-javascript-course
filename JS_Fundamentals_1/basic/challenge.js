@@ -75,13 +75,17 @@ if (bmiMark > bmiJohn) {
 
 console.log('----- Challenge 3 -----');
 // Calculate the average score
-const dolphinsScore = (96 + 108 + 89)/3;
+const dolphinsScore = (196 + 108 + 89)/3;
 const koalasScore = (88 + 91 + 110)/3;
+// Adding requirement: minimum score of 100
+const minimumScore = 100;
 // Compare
-if (dolphinsScore > koalasScore) {
-    console.log('Dolphins win the competition!');
-} else if (dolphinsScore < koalasScore) {
-    console.log('Koalas win the competition!');
+if (dolphinsScore > koalasScore && dolphinsScore >= minimumScore) {
+    console.log(`Dolphins win the competition!\nDolphins's score: ${dolphinsScore} and Koalas's score: ${koalasScore}.`);
+} else if (dolphinsScore < koalasScore && koalasScore >= minimumScore) {
+    console.log(`Koalas win the competition!\nDolphins's score: ${dolphinsScore} and Koalas's score: ${koalasScore}.`);
+} else if (dolphinsScore === koalasScore && koalasScore >= minimumScore) {
+    console.log(`Draw!\nDolphins's score: ${dolphinsScore} and Koalas's score: ${koalasScore}.`);
 } else {
-    console.log('Draw!');
+    console.log(`require minimum score of ${minimumScore}.`);
 }
