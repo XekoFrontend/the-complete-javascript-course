@@ -47,7 +47,7 @@ console.log(`My population in half country is ${halfPopulation} millions people.
 population += 1;
 console.log(population);
 console.log(`My country has more ${population - 6} million people than Finland.`);
-let description = `${myCountry} is in ${myContient}, and its ${population} million people speak ${language}.`;
+let description = `${country} is in ${continent}, and its ${population} million people speak ${language}.`;
 console.log(description)
 
 /**
@@ -59,14 +59,14 @@ console.log(description)
 const averagePopulation = 33
 const compareToAverage = population - averagePopulation;
 if (compareToAverage < 0) {
-    console.log(`${myCountry}'s is ${population} million below average.`);
+    console.log(`${country}'s is ${population} million below average.`);
 } else {
-    console.log(`${myCountry}'s population is above average.`);
+    console.log(`${country}'s population is above average.`);
 }
 
 /**
  * ------------------------------------------------------------------------
- * LECTURE:  Type Conversion and Coercion
+ * LECTURE: Type Conversion and Coercion
  * ------------------------------------------------------------------------
  */
 
@@ -85,6 +85,16 @@ ${question5}`);
 
 /**
  * ------------------------------------------------------------------------
- * LECTURE:  Type Conversion and Coercion
+ * LECTURE: Equality Operators: == vs. ===
  * ------------------------------------------------------------------------
  */
+
+let numNeighbours = Number(prompt('Enter the number of neighbours'));
+
+if (numNeighbours === 1) {
+    console.log('Only 1 border!');
+} else if(numNeighbours > 1) {
+    console.log('More than 1 border!');
+} else {
+    console.log('No border!');
+}
