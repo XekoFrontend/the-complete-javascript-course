@@ -230,3 +230,34 @@ if (shouldDrive) {
 }
 
 
+/**
+ * ------------------------------------------------------------------------
+ * The switch Statement
+ * ------------------------------------------------------------------------
+ */
+
+console.log('----- The switch Statement -----');
+const yourDay = prompt('Enter your day: ');
+switch(yourDay){
+    case 'monday':
+        console.log('Thứ hai là ngày đầu tuần\n' +
+            'Bé hứa cố gắng chăm ngoan');
+        break;
+    case 'tuesday':
+    case 'wednesday':
+    case 'thursday':
+        console.log('Thứ ba thứ tư thứ năm\n' +
+            'Ngày nào cũng luôn cố gắng.');
+        break;
+    case 'friday':
+    case 'saturday':
+        console.log('Thứ sáu lại đến thứ bảy\n' +
+            'Cô cho cháu phiếu bé ngoan');
+        break;
+    case 'sunday':
+        console.log('Chủ nhật cả nhà đều vui\n' +
+            'Là bé ngoan suốt tuần.');
+        break;
+    default:
+        console.log('Enter a valid day. From monday to sunday');
+}
