@@ -235,7 +235,7 @@ if (shouldDrive) {
  * The switch Statement
  * ------------------------------------------------------------------------
  */
-
+/*
 console.log('----- The switch Statement -----');
 const yourDay = prompt('Enter your day: ');
 switch(yourDay){
@@ -261,3 +261,5 @@ switch(yourDay){
     default:
         console.log('Enter a valid day. From monday to sunday');
 }
+*/
+

@@ -98,3 +98,24 @@ if (numNeighbours === 1) {
 } else {
     console.log('No border!');
 }
+
+
+/**
+ * ------------------------------------------------------------------------
+ * LECTURE: Logical Operators
+ * ------------------------------------------------------------------------
+ * Sarah is looking for a new country to live in. She wants to live in a
+ * country that speaks english, has less than 50 million people and is not an island.
+ */
+
+const newLanguage = 'Chinese';
+let newPopulation = 90;
+const isIsland = true;
+
+if (newLanguage === 'English' && newPopulation < 50 && !isIsland) {
+    console.log (`You should live in ${myCountry}.`);
+} else {
+    console.log (`${myCountry} does not meet your criteria.`);
+}
+
+
