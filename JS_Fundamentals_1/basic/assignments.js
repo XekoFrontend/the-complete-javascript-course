@@ -88,7 +88,7 @@ ${question5}`);
  * LECTURE: Equality Operators: == vs. ===
  * ------------------------------------------------------------------------
  */
-
+/*
 let numNeighbours = Number(prompt('Enter the number of neighbours'));
 
 if (numNeighbours === 1) {
@@ -98,7 +98,7 @@ if (numNeighbours === 1) {
 } else {
     console.log('No border!');
 }
-
+*/
 
 /**
  * ------------------------------------------------------------------------
@@ -108,9 +108,10 @@ if (numNeighbours === 1) {
  * country that speaks english, has less than 50 million people and is not an island.
  */
 
+const myCountry = 'Turkey';
 const newLanguage = 'Chinese';
 let newPopulation = 90;
-const isIsland = true;
+// const isIsland = true;
 
 if (newLanguage === 'English' && newPopulation < 50 && !isIsland) {
     console.log (`You should live in ${myCountry}.`);
@@ -119,3 +120,29 @@ if (newLanguage === 'English' && newPopulation < 50 && !isIsland) {
 }
 
 
+/**
+ * ------------------------------------------------------------------------
+ * LECTURE: The switch Statement
+ * ------------------------------------------------------------------------
+ */
+
+inputLanguage = prompt('Enter your native language');
+switch(inputLanguage){
+    case 'chinese':
+        console.log('MOST number of native speakers!');
+        break;
+    case 'cpanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('4th place');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too :D');
+}
