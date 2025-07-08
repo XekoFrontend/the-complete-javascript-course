@@ -278,3 +278,6 @@ ageChecking >= 18 ? console.log('You can start driving license.') : console.log(
 // expression: Quan trọng, dùng nhiều.
 const drink = ageChecking >= 18 ? 'Wine 🍷' : 'Water 💧';
 console.log(drink);
+
+// Dùng trong template literal.
+console.log(`You can drink ${ageChecking >= 18 ? 'wine 🍷' : 'water 💧'}.`);
