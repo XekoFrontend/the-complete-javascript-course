@@ -263,3 +263,18 @@ switch(yourDay){
 }
 */
 
+
+/**
+ * ------------------------------------------------------------------------
+ * If viết tắt
+ * ------------------------------------------------------------------------
+ */
+
+const ageChecking = 18;
+
+// statement
+ageChecking >= 18 ? console.log('You can start driving license.') : console.log(`You have to wait for ${18 - ageChecking} years.`);
+
+// expression: Quan trọng, dùng nhiều.
+const drink = ageChecking >= 18 ? 'Wine 🍷' : 'Water 💧';
+console.log(drink);
