@@ -89,3 +89,23 @@ if (dolphinsScore > koalasScore && dolphinsScore >= minimumScore) {
 } else {
     console.log(`require minimum score of ${minimumScore}.`);
 }
+
+
+/**
+ * ------------------------------------------------------------------------
+ * CHALLENGE 4
+ * ------------------------------------------------------------------------
+ * Steven wants to build a very simple tip calculator for whenever he goes eating in a
+ * restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and
+ * 300. If the value is different, the tip is 20%.
+ *
+ * Data 1: Test for bill values 275, 40 and 430
+ */
+
+console.log('----- Challenge 4: simple tip calculator -----');
+let stevenBill = 275 + 40 + 430
+if (stevenBill >= 50 && stevenBill <= 300) {
+    console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.15} and the total was ${stevenBill * 1.15}.`);
+} else {
+    console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.2} and the total was ${stevenBill * 1.2}.`);
+}
