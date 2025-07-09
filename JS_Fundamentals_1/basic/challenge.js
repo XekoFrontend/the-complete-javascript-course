@@ -104,8 +104,13 @@ if (dolphinsScore > koalasScore && dolphinsScore >= minimumScore) {
 
 console.log('----- Challenge 4: simple tip calculator -----');
 let stevenBill = 275 + 40 + 430
-if (stevenBill >= 50 && stevenBill <= 300) {
-    console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.15} and the total was ${stevenBill * 1.15}.`);
-} else {
-    console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.2} and the total was ${stevenBill * 1.2}.`);
-}
+// if (stevenBill >= 50 && stevenBill <= 300) {
+//     console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.15} and the total was ${stevenBill * 1.15}.`);
+// } else {
+//     console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.2} and the total was ${stevenBill * 1.2}.`);
+// }
+
+// 300<= stevenBill >=50 ? console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.15} and the total was ${stevenBill * 1.15}.`) : console.log(`Steven's bill was ${stevenBill}, the tip was ${stevenBill * 0.2} and the total was ${stevenBill * 1.2}.`);
+
+const tip = stevenBill >= 50 && stevenBill <= 300 ? stevenBill * 0.15 : stevenBill * 0.2;
+console.log(`Steven's bill was ${stevenBill}, the tip was ${tip} and the total was ${stevenBill + tip}.`);
